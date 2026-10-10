@@ -1,0 +1,30 @@
+# Host: @@name@@
+
+- Role: @@role@@
+- IP / placeholder: @@ip@@
+- Collection: @@mode@@
+- Config export location (pointer only): @@config_export@@
+
+## Hardware and installation
+
+TODO: hardware and OS/firmware version; installation media and replacement steps.
+Use this same document for appliances and for Windows or Mac machines.
+Nothing is auto-collected from docs-only devices; describe exports by location.
+
+## Configuration and networking
+
+TODO: config paths and storage layout; interfaces and [network](../../network.md).
+Only list config files you have chosen to collect in host.toml's `files` array.
+[Observed output](observed/README.md) exists only after SSH/local collection.
+
+## Services and backups
+
+TODO: link individual [services](../../services.md) and [backups](../../backups.md).
+Record which data belongs to this host and how it is restored.
+
+## Secret locations and recovery
+
+secret: <where it lives>
+
+TODO: out-of-lab password-manager access and recovery; restore checks
+and [runbooks](../../runbooks/README.md).

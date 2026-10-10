@@ -1,0 +1,292 @@
+{
+  "exclude": [],
+  "approvals": [],
+  "quickstart": [
+    {
+      "file": "README.md",
+      "line": 46,
+      "argv": [
+        "uv",
+        "run",
+        "--no-project",
+        "--python",
+        "3.12",
+        "--",
+        "python",
+        "-m",
+        "homelab_kit",
+        "init",
+        "../my-lab"
+      ]
+    },
+    {
+      "file": "README.md",
+      "line": 47,
+      "argv": [
+        "uv",
+        "run",
+        "--no-project",
+        "--python",
+        "3.12",
+        "--",
+        "python",
+        "-m",
+        "homelab_kit",
+        "--repo",
+        "../my-lab",
+        "add-host",
+        "example-control",
+        "--local"
+      ]
+    },
+    {
+      "file": "README.md",
+      "line": 48,
+      "argv": [
+        "uv",
+        "run",
+        "--no-project",
+        "--python",
+        "3.12",
+        "--",
+        "python",
+        "-m",
+        "homelab_kit",
+        "--repo",
+        "../my-lab",
+        "collect",
+        "--dry-run"
+      ]
+    },
+    {
+      "file": "README.md",
+      "line": 49,
+      "argv": [
+        "uv",
+        "run",
+        "--no-project",
+        "--python",
+        "3.12",
+        "--",
+        "python",
+        "-m",
+        "homelab_kit",
+        "--repo",
+        "../my-lab",
+        "collect"
+      ]
+    },
+    {
+      "file": "README.md",
+      "line": 50,
+      "argv": [
+        "uv",
+        "run",
+        "--no-project",
+        "--python",
+        "3.12",
+        "--",
+        "python",
+        "-m",
+        "homelab_kit",
+        "--repo",
+        "../my-lab",
+        "fill"
+      ]
+    },
+    {
+      "file": "README.md",
+      "line": 51,
+      "argv": [
+        "uv",
+        "run",
+        "--no-project",
+        "--python",
+        "3.12",
+        "--",
+        "python",
+        "-m",
+        "homelab_kit",
+        "--repo",
+        "../my-lab",
+        "check"
+      ]
+    },
+    {
+      "file": "README.md",
+      "line": 151,
+      "argv": [
+        "python3",
+        "-m",
+        "pip",
+        "install",
+        "."
+      ]
+    },
+    {
+      "file": "README.md",
+      "line": 162,
+      "argv": [
+        "python3",
+        "-m",
+        "homelab_kit",
+        "demo",
+        "demo-lab"
+      ]
+    },
+    {
+      "file": "README.md",
+      "line": 163,
+      "argv": [
+        "python3",
+        "-m",
+        "homelab_kit",
+        "--repo",
+        "demo-lab",
+        "check"
+      ]
+    },
+    {
+      "file": "README.md",
+      "line": 164,
+      "argv": [
+        "python3",
+        "-m",
+        "homelab_kit",
+        "--repo",
+        "demo-lab",
+        "collect",
+        "--dry-run"
+      ]
+    },
+    {
+      "file": "README.md",
+      "line": 165,
+      "argv": [
+        "python3",
+        "-m",
+        "homelab_kit",
+        "--repo",
+        "demo-lab",
+        "fill"
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "file": "README.md",
+      "line": 406,
+      "argv": [
+        "uv",
+        "run",
+        "--no-project",
+        "--python",
+        "3.11",
+        "--",
+        "python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-q"
+      ],
+      "role": "tests"
+    },
+    {
+      "file": "README.md",
+      "line": 407,
+      "argv": [
+        "uv",
+        "run",
+        "--no-project",
+        "--python",
+        "3.14",
+        "--",
+        "python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-q"
+      ],
+      "role": "tests"
+    },
+    {
+      "file": "README.md",
+      "line": 408,
+      "argv": [
+        "python3",
+        "-m",
+        "tests.break_it"
+      ],
+      "role": "tests"
+    },
+    {
+      "file": "README.md",
+      "line": 409,
+      "argv": [
+        "python3",
+        "-m",
+        "compileall",
+        "-q",
+        "homelab_kit"
+      ],
+      "role": "syntax"
+    },
+    {
+      "file": "README.md",
+      "line": 410,
+      "argv": [
+        "uv",
+        "run",
+        "--no-project",
+        "--python",
+        "3.12",
+        "--with",
+        "ruff",
+        "--",
+        "ruff",
+        "check",
+        "."
+      ],
+      "role": "lint"
+    },
+    {
+      "file": "README.md",
+      "line": 411,
+      "argv": [
+        "uv",
+        "run",
+        "--no-project",
+        "--python",
+        "3.12",
+        "--with",
+        "mypy",
+        "--",
+        "mypy",
+        "homelab_kit"
+      ],
+      "role": "types"
+    },
+    {
+      "file": "README.md",
+      "line": 412,
+      "argv": [
+        "uv",
+        "run",
+        "--no-project",
+        "--python",
+        "3.12",
+        "--with",
+        "build",
+        "--",
+        "python",
+        "-m",
+        "build"
+      ],
+      "role": "build"
+    }
+  ]
+}
