@@ -22,7 +22,7 @@ class FixPassOneTests(HermeticTestCase):
 
     def test_parent_relative_root_has_valid_inventory_and_capture_sources(self):
         self.lab()
-        # Exercise the literal README --repo ../my-lab shape.
+
         control = self.root / "kit"
         control.mkdir()
         with patch("os.getcwd", return_value=str(control)):
